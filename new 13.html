@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEVEL 5 - SECURE REPORT SUBMISSION</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Roboto Mono', 'Courier New', monospace;
+            margin: 0;
+            padding: 50px 20px;
+            line-height: 1.6;
+        }
+
+        .header {
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+            text-align: center;
+            border-bottom: 2px solid #4d4d4d;
+            padding-bottom: 25px;
+        }
+
+        .classification {
+            color: #ff3333;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 8px;
+        }
+
+        .agency {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #111111;
+            border: 1px solid #333333;
+            padding: 50px 60px;
+            box-shadow: 0 0 30px rgba(255, 50, 50, 0.1);
+        }
+
+        h2 {
+            color: #ff5555;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        label {
+            display: block;
+            margin: 28px 0 10px 0;
+            color: #aaaaaa;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 16px 18px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            border: 1px solid #444444;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ff5555;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 85, 85, 0.15);
+        }
+
+        button {
+            margin-top: 40px;
+            width: 100%;
+            padding: 18px;
+            background: #ff3333;
+            color: white;
+            border: none;
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #cc0000;
+        }
+
+        .warning {
+            text-align: center;
+            color: #777777;
+            font-size: 13.5px;
+            margin-top: 30px;
+        }
+
+        .stamp {
+            position: fixed;
+            top: 220px;
+            right: 100px;
+            transform: rotate(-8deg);
+            color: #ff3333;
+            font-size: 82px;
+            opacity: 0.08;
+            border: 6px solid #ff3333;
+            padding: 12px 50px;
+            pointer-events: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="classification">SECURE COMMUNICATIONS & REPORT PORTAL</div>
+    <div class="agency">ALL SUBMISSIONS ARE LOGGED AND MONITORED. DO NOT ABUSE.</div>
+    <p style="color:#666; font-size:15px;">It will take min. 1-2 Business Days for a Respond</p>
+</div>
+
+<div class="container">
+    <h2>SECURE REPORT SUBMISSION</h2>
+    
+    <form action="https://formspree.io/f/xbdpeggn" method="POST">
+        
+        <label>Full Name (With Title) *</label>
+        <input type="text" name="Full Name (With Title)" required placeholder="e.g. Dr. Mr. Max Mustermann">
+
+        <label>Email Address *</label>
+        <input type="email" name="email" required placeholder="your.email@domain.com">
+
+        <label>Description / Message *</label>
+        <textarea name="description" rows="11" required placeholder="Please provide your detailed Question or request..."></textarea>
+
+        <button type="submit">SUBMIT REPORT</button>
+        
+        <p class="warning">
+            All fields are mandatory.<br>
+            This submission is encrypted and will be reviewed under protocol.
+        </p>
+    </form>
+</div>
+
+</body>
+</html>
